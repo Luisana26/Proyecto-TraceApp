@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TraceApp</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <div class="encabezado__contenedor">
+    <div class="encabezado__logo-caja">
+      <img src="img/logo.svg" alt="Logo de Trace" class="encabezado__logo" />
+    </div>  
+      <nav class="navegacion">
+        <ul class="navegacion__lista">
+          <li class="encabezado__enlace"><a href="#">Características</a></li>
+          <li class="encabezado__enlace"><a href="#">Precios</a></li>
+          <li class="encabezado__enlace"><a href="#">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="boton boton--cta">Descargar ⬇</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio">
+      <div class="inicio__contenido">
+        <div class="inicio__texto">
+          <h1 class="inicio__titulo">Tu vida, simplificada en la palma de tu mano</h1>
+          <p class="inicio__descripcion">
+            Con TraceApp, puedes llevar un control detallado de tus finanzas personales de manera fácil y rápida.
+          </p>
+          <div class="inicio__botones">
+            <a href="#" class="boton boton--primario">Ver demo</a>
+            <a href="#" class="boton boton--secundario">Descargar ⬇</a>
+          </div>
+          <div class="inicio__estadisticas">
+            <p>👥 +200,000 usuarios</p>
+            <p>🌍 +50 países</p>
+          </div>
+        </div>
+        <div class="inicio__imagen">
+          <img src="img/1.png" alt="App en teléfono" />
+        </div>
+      </div>
+    </section>
+
+    <section class="caracteristicas">
+      <h2 class="caracteristicas__titulo">Características</h2>
+      <div class="caracteristicas__contenedor">
+        <img src="img/4.png" alt="Interfaz móvil" class="caracteristicas__imagen" />
+        <div class="caracteristicas__lista">
+          <div class="caracteristica caracteristica--activa">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="caracteristica">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="caracteristica">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="precios">
+      <h2 class="precios__titulo">Precios</h2>
+      <div class="precios__tarjetas">
+        <div class="tarjeta">
+          <h3 class="tarjeta__titulo">Intro</h3>
+          <p class="tarjeta__precio">$5 <span>USD / mes</span></p>
+          <p class="tarjeta__descripcion"><b>Plan básico para proyectos hobby o prototipos</b></p>
+          <ul class="tarjeta__lista">
+            <li>1,000 Descargas</li>
+            <li>1,000 Subidas</li>
+            <li>1 GB de almacenamiento</li>
+          </ul>
+          <a href="#" class="boton boton--primario">Escoger Plan</a>
+        </div>
+        <div class="tarjeta tarjeta--activa">
+          <h3 class="tarjeta__titulo">Personal</h3>
+          <p class="tarjeta__precio">$10 <span>USD / mes</span></p>
+          <p class="tarjeta__descripcion"><b>Plan personal para proyectos pequeños</b></p>
+          <ul class="tarjeta__lista">
+            <li>5,000 Descargas</li>
+            <li>5,000 Subidas</li>
+            <li>5 GB de almacenamiento</li>
+          </ul>
+          <a href="#" class="boton boton--primario">Escoger Plan</a>
+        </div>
+        <div class="tarjeta">
+          <h3 class="tarjeta__titulo">Profesional</h3>
+          <p class="tarjeta__precio">$15 <span>USD / mes</span></p>
+          <p class="tarjeta__descripcion"><b>Plan para proyectos profesionales y comerciales</b></p>
+          <ul class="tarjeta__lista">
+            <li>15,000 Descargas</li>
+            <li>15,000 Subidas</li>
+            <li>15 GB de almacenamiento</li>
+          </ul>
+          <a href="#" class="boton boton--primario">Escoger Plan</a>
+        </div>
+        <div class="tarjeta">
+          <h3 class="tarjeta__titulo">Ultimate</h3>
+          <p class="tarjeta__precio">$30 <span>USD / mes</span></p>
+          <p class="tarjeta__descripcion"><b>Plan para equipos y proyectos enterprise</b></p>
+          <ul class="tarjeta__lista">
+            <li>40,000 Descargas</li>
+            <li>40,000 Subidas</li>
+            <li>40 GB de almacenamiento</li>
+          </ul>
+          <a href="#" class="boton boton--primario">Escoger Plan</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__contenido">
+      <img src="img/logo.svg" alt="Logo de Trace" class="pie__logo" />
+      <nav class="pie__nav">
+        <a href="#">Términos y Condiciones</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Trabajos</a>
+        <a href="#">Soporte & Ayuda</a>
+      </nav>
+      <p class="pie__derechos">
+        © 2025 Trace. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+   
+    document.querySelectorAll('.caracteristica').forEach(caja => {
+      caja.addEventListener('click', () => {
+        document.querySelectorAll('.caracteristica').forEach(c => c.classList.remove('caracteristica--activa'));
+        caja.classList.add('caracteristica--activa');
+      });
+    });
+
+  
+    document.querySelectorAll('.tarjeta').forEach(plan => {
+      plan.addEventListener('click', () => {
+        document.querySelectorAll('.tarjeta').forEach(p => p.classList.remove('tarjeta--activa'));
+        plan.classList.add('tarjeta--activa');
+      });
+    });
+  </script>
+</body>
+</html>

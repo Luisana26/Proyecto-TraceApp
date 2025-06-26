@@ -1,0 +1,126 @@
+.encabezado {
+  background-color: var(--blanco);
+  padding: 1rem 2rem;
+  box-shadow: var(--sombra);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.encabezado__contenedor {
+  max-width: 2200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacion__lista {
+  display: flex;
+  gap: 1.5rem;
+}
+.inicio__contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #3a48de;
+background: linear-gradient(90deg, rgba(58, 72, 222, 1) 48%, rgba(87, 199, 133, 1) 100%);
+  padding: 4rem 2rem;
+  color: var(--blanco);
+}
+.inicio__texto {
+  flex: 1 1 400px;
+}
+.inicio__imagen {
+  max-width: 260px;
+  height: auto;
+  margin: auto;
+}
+
+.caracteristicas__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.caracteristicas__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1 1 300px; 
+}
+
+.caracteristicas__imagen {
+  max-width: 280px;
+  border-radius: var(--borde-radius);
+  box-shadow: var(--sombra);
+}
+
+.caracteristica {
+  background-color: var(--blanco);
+  padding: 1rem;
+  border-radius: var(--borde-radio);
+  border: 1px solid #ccc;
+  transition: var(--transicion);
+}
+.caracteristica--activa {
+  background-color: var(--azul-claro);
+  color: var(--blanco);
+}
+
+.precios__tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.tarjeta {
+  background-color: var(--blanco);
+  border-radius: var(--borde-radio);
+  padding: 2rem;
+  box-shadow: var(--sombra);
+  transition: var(--transicion);
+  cursor: pointer;
+}
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+.tarjeta--activa {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.pie {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 2rem;
+  text-align: center;
+}
+.pie__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 1024px) {
+  .inicio__contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+  .caracteristicas__contenedor {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .navegacion__lista {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

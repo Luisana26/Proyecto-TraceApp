@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, li, a {
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}

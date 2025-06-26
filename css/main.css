@@ -1,0 +1,22 @@
+:root {
+  --azul-oscuro: #001d3d;
+  --azul-medio: #003566;
+  --azul-claro: #4d47e7;
+  --blanco: #ffffff;
+  --gris-fondo: #e6f0ff;
+  --gris-texto: #6c757d;
+
+  --borde-radio: 12px;
+  --sombra: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --transicion: all 0.3s ease;
+}
+
+body {
+  background-color: #f0f4ff;
+  color: #333;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
